@@ -6,3 +6,7 @@ Adds a small icon next to the user and a reference link, inline with each matche
 Todo: generalize plugin to pull configuration + key:value list from specified endpoint.
 
 ![image](https://github.com/user-attachments/assets/b028dd23-301c-4ff6-83f9-2a443590cb32)
+
+
+To use:
+You can search for this plugin on the Chrome Web Store or download it directly by selecting the CRX file and installing into Chrome.
