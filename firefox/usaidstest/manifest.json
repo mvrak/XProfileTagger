@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "X US Aids Test",
+  "version": "1.0",
+  "description": "Adds icons and reference links to specific X profiles based on community-submitted data from USA Spending and DataRepublican",
+  "permissions": [
+    "activeTab",
+    "https://list.usaids.net/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "info@usaids.net"
+    }
+  },
+  "icons": {
+    "32": "usaids32.png",
+    "128": "usaids128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*", "https://x.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "usaids.png"
+  ]
+}
